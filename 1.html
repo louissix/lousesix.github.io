@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style>
+			/*这个是css的注释*/
+
+		</style>
+	</head>
+
+	<body>
+
+		<!--html的注释-->
+		
+		<input type="button" value="改变背景" id="btn" />
+
+<script>
+	//单行注释 当只注释一行的时候，用单行注释
+	/*
+		多行注释
+		当注释多行的时候，使用多行注释
+	*/
+	//需求：点击页面中按钮，按钮背景色变为黄色
+
+	/*
+		步骤：
+
+			1. 先找到input这个元素
+			2. 给input添加点击处理
+			3. 点击之后做的事情
+				让这个input的背景变为yellow
+
+		getElementById
+			get     获取
+			element  元素
+			by      通过
+			id      id名字
+
+		通过id获取元素
+			document.getElementById("id名字")
+				"id名字"必须加上单引号或双引号
+
+		onclick
+			on+click  当点击的时候
+
+	*/
+	//当input被点击的时候，处理一些事情
+	document.getElementById("btn").onclick = function(){
+		//这里面写上要处理的事情
+	    document.getElementById("btn").style.background = "yellow";
+		document.getElementById("btn").style.width = "100px";
+	}
+
+</script>
+		
+	</body>
+</html>
