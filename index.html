@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>小米官网</title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src='js/index.js'></script>
+		<link rel="stylesheet" href="css/style.css" />		
+	</head>
+
+	<body>
+		<!--遮罩层-->
+		<div id="body_mask"></div>
+		<!--页面头部-->
+		<div id="head_box">
+			<div id="head_wrap">
+				<div id="head_nav">
+					<a class="head_nav_a">小米网</a>
+					<span>|</span>
+					<a class="head_nav_a">MIUI</a>
+					<span>|</span>
+					<a class="head_nav_a">米聊</a>
+					<span>|</span>
+					<a class="head_nav_a">游戏</a>
+					<span>|</span>
+					<a class="head_nav_a">多看阅读</a>
+					<span>|</span>
+					<a class="head_nav_a">云服务</a>
+					<span>|</span>
+					<a class="head_nav_a">小米移动版</a>
+					<span>|</span>
+					<a class="head_nav_a">问题反馈</a>
+					<span>|</span>
+					<a class="head_nav_a" id="Select_Region_but">Select Region</a>
+				</div>
+				<div id="head_right">
+					<div id="head_landing">
+						<a class="head_nav_a">登陆</a>
+						<span>|</span>
+						<a class="head_nav_a">注册</a>
+					</div>
+					<div id="head_car">
+						<a class="head_car_text">购物车（0）</a>
+						<div id="car_content">
+							<a class="car_text"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--地区弹框-->
+		<div id="region_box">
+			<div id="region_banner">
+				<a>Select Region</a>
+				<a class="close_region_but" id="close_region_but">×</a>
+			</div>
+			<div id="region_title">
+				<p>Welcome to Mi.com</p>
+				<p>Please select your country or region</p>
+			</div>
+			<div id="region_content">
+				<ul>
+					<li>Mainland China</li>
+					<li>Hong Kong</li>
+					<li>TaiWan</li>
+					<li>Singapore</li>
+					<li>Malaysia</li>
+					<li>Philippines</li>
+					<li>India</li>
+					<li>Indonesia</li>
+					<li>Brasil</li>
+					<li>Global Home</li>
+				</ul>
+			</div>
+		</div>
+		<!--大功能区-->
+		<div id="main_head_box">
+			<!--导航区-->
+			<div id="menu_wrap">
+				<!--logo-->
+				<div id="menu_logo">
+					<img src="http://s01.mifile.cn/i/mi-logo.png" />
+				</div>
+				<!--列表框-->
+				<div id="menu_nav">
+					<ul>
+						<li class="menu_li">小米手机</li>
+						<li class="menu_li">红米</li>
+						<li class="menu_li">平板</li>
+						<li class="menu_li">电视&nbsp;&nbsp;盒子</li>
+						<li class="menu_li">路由器</li>
+						<li class="menu_li">智能硬件</li>
+						<li>
+							<a>服务</a>
+						</li>
+						<li>
+							<a>社区</a>
+						</li>
+					</ul>
+				</div>
+				<!--搜索框-->
+				<div id="find_wrap">
+					<div id="find_bar">
+						<input type="text" id="find_input" />
+						<div id="find_bar_word">
+							<a>耳机</a>
+							<a>小米手机4</a>
+						</div>
+						<!--下拉列表-->
+						<div id="find_hot">
+							<ul>
+								<li>
+									<a>移动电源</a>
+									<a>约有22件</a>
+								</li>
+								<li>
+									<a>空气净化器</a>
+									<a>约有2件</a>
+								</li>
+								<li>
+									<a>手机保护壳</a>
+									<a>约有45件</a>
+								</li>
+								<li>
+									<a>WIFI</a>
+									<a>约有3件</a>
+								</li>
+								<li>
+									<a>自拍杆</a>
+									<a>约有7件</a>
+								</li>
+								<li>
+									<a>随身风扇</a>
+									<a>约有2件</a>
+								</li>
+								<li>
+									<a>小蚁摄像机</a>
+									<a>约有1件</a>
+								</li>
+								<li>
+									<a>运动相机</a>
+									<a>约有1件</a>
+								</li>
+								<li>
+									<a>快速充电器</a>
+									<a>约有5件</a>
+								</li>
+								<li>
+									<a>配件优惠套装</a>
+									<a>约有8件</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="find_but">GO</div>
+				</div>
+			</div>
+			<!--导航区隐藏框-->
+			<div id="menu_content_bg">
+				<div id="menu_content_wrap">
+					<ul>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mi4!160x110.jpg">
+								<p class="menu_content_tit">小米手机4</p>
+								<p class="menu_content_price">1499元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/minote!160x110.jpg">
+								<p class="menu_content_tit">小米NOTE标准版</p>
+								<p class="menu_content_price">1999元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/minotepro!160x110.jpg">
+								<p class="menu_content_tit">小米NOTE顶配版</p>
+								<p class="menu_content_price">2999元起</p>
+							</div>
+						</li>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/hongmi2a!160x110.jpg">
+								<p class="menu_content_tit">红米手机2A</p>
+								<p class="menu_content_price">499元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/hongmi2!160x110.jpg">
+								<p class="menu_content_tit">红米手机2</p>
+								<p class="menu_content_price">599元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/note!160x110.jpg">
+								<p class="menu_content_tit">红米NOTE</p>
+								<p class="menu_content_price">699元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/note2!160x110.jpg">
+								<p class="menu_content_tit">红米NOTE2</p>
+								<p class="menu_content_price">799元</p>
+							</div>
+						</li>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mipad16!160x110.jpg">
+								<p class="menu_content_tit">小米平板16G</p>
+								<p class="menu_content_price">1299元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mipad64!160x110.jpg">
+								<p class="menu_content_tit">小米平板64G</p>
+								<p class="menu_content_price">1499元起</p>
+							</div>
+						</li>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mitv40!160x110.jpg">
+								<p class="menu_content_tit">小米电视2&nbsp;40英寸</p>
+								<p class="menu_content_price">1999元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mitv48!160x110.jpg">
+								<p class="menu_content_tit">小米电视2S&nbsp;48英寸</p>
+								<p class="menu_content_price">2999元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mitv49!160x110.jpg">
+								<p class="menu_content_tit">小米电视2&nbsp;49英寸</p>
+								<p class="menu_content_price">3399元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/mitv55!160x110.jpg">
+								<p class="menu_content_tit">小米电视2&nbsp;55英寸</p>
+								<p class="menu_content_price">4499元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/hezimini!160x110.jpg">
+								<p class="menu_content_tit">小米盒子MINI版</p>
+								<p class="menu_content_price">199元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/hezis!160x110.jpg">
+								<p class="menu_content_tit">小米盒子增强版</p>
+								<p class="menu_content_price">299元</p>
+							</div>
+						</li>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/miwifi!160x110.jpg">
+								<p class="menu_content_tit">全新小米路由器</p>
+								<p class="menu_content_price">699元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/miwifimini!160x110.jpg">
+								<p class="menu_content_tit">小米路由器&nbsp;MINI</p>
+								<p class="menu_content_price">129元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/miwifilite!160x110.jpg">
+								<p class="menu_content_tit">小米路由器&nbsp;青春版</p>
+								<p class="menu_content_price">79元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/wifiExtension!160x110.jpg">
+								<p class="menu_content_tit">小米WIFI放大器</p>
+								<p class="menu_content_price">39元</p>
+							</div>
+						</li>
+						<li>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/scale!160x110.jpg">
+								<p class="menu_content_tit">体重称</p>
+								<p class="menu_content_price">99元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/xiaoyi!160x110.jpg">
+								<p class="menu_content_tit">摄像头</p>
+								<p class="menu_content_price">129元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/yicamera!160x110.jpg">
+								<p class="menu_content_tit">运动相机</p>
+								<p class="menu_content_price">399元起</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/ihealth!160x110.jpg">
+								<p class="menu_content_tit">血压计</p>
+								<p class="menu_content_price">199元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/chazuo!160x110.jpg">
+								<p class="menu_content_tit">智能插座</p>
+								<p class="menu_content_price">59元</p>
+							</div>
+							<span class="menu_content_line"></span>
+							<div class="menu_content">
+								<img src="http://c1.mifile.cn/f/i/15/goods/nav/smart!160x110.jpg">
+								<p class="menu_content_tit">查看全部
+									<br/>智能硬件</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--侧边栏菜单+轮播图-->
+			<div id="big_banner_wrap">
+				<!--侧边栏菜单和他的隐藏框-->
+				<ul id="banner_menu_wrap">
+					<li>
+						<a>手机&nbsp;平板</a>
+						<a class="banner_menu_i">></a>
+						<!--隐藏框-->
+						<div class="banner_menu_content" style="width: 600px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/minote.jpg?width=40&height=40"></a>
+									<a>小米NOTE</a>
+									<span>选购</span>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/mi4.jpg?width=40&height=40"></a>
+									<a>小米手机4</a><span>选购</span></li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2.jpg?width=40&height=40"></a>
+									<a>红米手机2</a><span>选购</span></li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2a.jpg?width=40&height=40"></a>
+									<a>红米手机2A</a><span>选购</span></li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/note2.jpg?width=40&height=40"></a>
+									<a>红米NOTE2</a><span>选购</span></li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/note.jpg?width=40&height=40"></a>
+									<a>红米NOTE&nbsp;4G双卡</a><span>选购</span></li>
+							</ul>
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/mipad.jpg?width=40&height=40"></a>
+									<a>小米平板</a><span>选购</span></li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/telcom.jpg?width=40&height=40"></a>
+									<a>电信版</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/heyue.jpg?width=40&height=40"></a>
+									<a>合约机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhongxin.jpg?width=40&height=40"></a>
+									<a>中信特权</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/compare.jpg?width=40&height=40"></a>
+									<a>对比手机</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>电视&nbsp;盒子</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 600px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv40.jpg?width=40&height=40"></a>
+									<a>小米电视40英寸</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv48.jpg?width=40&height=40"></a>
+									<a>小米电视48英寸</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv49.jpg?width=40&height=40"></a>
+									<a>小米电视49英寸</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv55.jpg?width=40&height=40"></a>
+									<a>小米电视55英寸</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/hezis.jpg?width=40&height=40"></a>
+									<a>小米盒子</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/hezimini.jpg?width=40&height=40"></a>
+									<a>小米盒子MINI</a>
+								</li>
+							</ul>
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianshipeijian.jpg?width=40&height=40"></a>
+									<a>小米电视配件</a><span>选购</span></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>路由器&nbsp;智能配件</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 900px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifi.jpg?width=40&height=40"></a>
+									<a>小米路由器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifilite.jpg?width=40&height=40"></a>
+									<a>小米路由器&nbsp;青春版</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/air.jpg?width=40&height=40"></a>
+									<a>净化器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/xiaoyi.jpg?width=40&height=40"></a>
+									<a>摄像机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/scale.jpg?width=40&height=40"></a>
+									<a>体重称</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/chazuo.jpg?width=40&height=40"></a>
+									<a>智能插头</a>
+								</li>
+							</ul>
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifimini.jpg?width=40&height=40"></a>
+									<a>小米路由器MINI</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/wifiExtension.jpg?width=40&height=40"></a>
+									<a>小米WIFI放大器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/yicamera.jpg?width=40&height=40"></a>
+									<a>运动相机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/water.jpg?width=40&height=40"></a>
+									<a>净水器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/ihealth.jpg?width=40&height=40"></a>
+									<a>血压计</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/chuangtoudeng.jpg?width=40&height=40"></a>
+									<a>床头灯</a>
+								</li>
+							</ul>
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhinengtaozhuang.jpg?width=40&height=40"></a>
+									<a>智能家庭套装</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/shouhuan.jpg?width=40&height=40"></a>
+									<a>小米手环</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/smart.jpg?width=40&height=40"></a>
+									<a>全部智能硬件</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>移动电源&nbsp;插线板</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianyuan.jpg?width=40&height=40"></a>
+									<a>小米移动电源</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/powerscript.jpg?width=40&height=40"></a>
+									<a>小米插线板</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/yidongdianyuan.jpg?width=40&height=40"></a>
+									<a>品牌移动电源</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianyuanfujian.jpg?width=40&height=40"></a>
+									<a>移动电源附件</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>耳机&nbsp;音箱</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/headphone.jpg?width=40&height=40"></a>
+									<a>小米头戴式耳机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/huosai.jpg?width=40&height=40"></a>
+									<a>小米活塞耳机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/bluetoothheadset.jpg?width=40&height=40"></a>
+									<a>小米蓝牙耳机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/erji.jpg?width=40&height=40"></a>
+									<a>品牌耳机</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/yinxiang.jpg?width=40&height=40"></a>
+									<a>音箱</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>电池&nbsp;存储卡</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianchi.jpg?width=40&height=40"></a>
+									<a>电池</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/chongdian.jpg?width=40&height=40"></a>
+									<a>充电器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/xiancai.jpg?width=40&height=40"></a>
+									<a>线材</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/cunchu.jpg?width=40&height=40"></a>
+									<a>存储卡</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>保护套&nbsp;后盖</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/baohu.jpg?width=40&height=40"></a>
+									<a>保护套/保护壳</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/hougai.jpg?width=40&height=40"></a>
+									<a>后盖</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>贴膜&nbsp;其它配件</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 600px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tiemo.jpg?width=40&height=40"></a>
+									<a>贴膜</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/zipaigan.jpg?width=40&height=40"></a>
+									<a>自拍杆</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/shb.jpg?width=40&height=40"></a>
+									<a>蓝牙手柄</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/tizhi.jpg?width=40&height=40"></a>
+									<a>贴纸</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/fangchensai.jpg?width=40&height=40"></a>
+									<a>防尘塞</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhijia.jpg?width=40&height=40"></a>
+									<a>手机支架</a>
+								</li>
+							</ul>
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/raoxian.jpg?width=40&height=40"></a>
+									<a>耳机绕线器</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/wifi.jpg?width=40&height=40"></a>
+									<a>随身WIFI</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>米兔&nbsp;服装</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/mitu.jpg?width=40&height=40"></a>
+									<a>米兔</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/fuzhuang.jpg?width=40&height=40"></a>
+									<a>服装</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a>背包&nbsp;其它周边</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 300px;">
+							<ul class="banner_menu_content_ul">
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/bag.jpg?width=40&height=40"></a>
+									<a>背包</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/shubiaodian.jpg?width=40&height=40"></a>
+									<a>小米鼠标坠</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhoubian.jpg?width=40&height=40"></a>
+									<a>生活周边</a>
+								</li>
+								<li>
+									<a><img src="http://c1.mifile.cn/f/i/15/goods/sidebar/wan.jpg?width=40&height=40"></a>
+									<a>玩酷产品</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<!--轮播图-->
+				<div id="big_banner_pic_wrap">
+					<ul id="big_banner_pic">
+						<li><img src="http://i3.mifile.cn/a4/T1HzV_ByVv1RXrhCrK.jpg"></li>
+						<li><img src="http://i3.mifile.cn/a4/T1oEC_B4Jv1RXrhCrK.jpg"></li>
+						<li><img src="http://i3.mifile.cn/a4/T1UCW_B_YT1RXrhCrK.jpg"></li>
+						<li><img src="http://i3.mifile.cn/a4/T1XNZ_BbDT1RXrhCrK.jpg"></li>
+						<li><img src="http://i3.mifile.cn/a4/T1bNE_BQJT1RXrhCrK.jpg"></li>
+					</ul>
+				</div>
+				<!--轮播图的相关组件-->
+				<div id="big_banner_change_wrap">
+					<div id="big_banner_change_prev"><</div><!--向左-->
+					<div id="big_banner_change_next">></div><!--向右-->
+					<!--索引圆点-->
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<!--小产品静态-->
+			<div id="head_other_wrap">
+				<div id="head_other">
+					<ul id="head_other_bg">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul id="head_other_ul">
+						<li>
+							<a>START</a>
+							<a>开放购买</a>
+						</li>
+						<li>
+							<a>GROUND</a>
+							<a>企业团购</a>
+						</li>
+						<li>
+							<a>RETROFIT</a>
+							<a>官翻产品</a>
+						</li>
+						<li>
+							<a>CHANNEL</a>
+							<a>F码通道</a>
+						</li>
+						<li>
+							<a>RECHARGE</a>
+							<a>话费充值</a>
+						</li>
+						<li>
+							<a>SECURITY</a>
+							<a>防伪查询</a>
+						</li>
+					</ul>
+				</div>
+				<div id="head_other_ad"><img src="http://i3.mifile.cn/a4/T184E_BQWT1RXrhCrK.jpg" /></div>
+				<div id="head_other_ad"><img src="http://i3.mifile.cn/a4/T1yvd_BQDT1RXrhCrK.jpg" /></div>
+				<div id="head_other_ad"><img src="http://i3.mifile.cn/a4/T1mahQBmKT1RXrhCrK.jpg" /></div>
+			</div>
+			<!--整列轮播-->
+			<div id="head_hot_goods_wrap">
+				<!--上面的名字和左右按钮-->
+				<div id="head_hot_goods_title">
+					<span class="title_span">小米明星单品</span>
+					<div id="head_hot_goods_change">
+						<span id="head_hot_goods_prave"><</span>
+						<span id="head_hot_goods_next">></span>
+					</div>
+				</div>
+				<!--图片列表-->
+				<div id="head_hot_goods_content">
+					<ul>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1riKjB7VT1RXrhCrK.jpg"></a>
+							<a>小米电视2/2S 全系列</a>
+							<a>40/48/49/55英寸 现货购买</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T19AbjBCDT1RXrhCrK.jpg"></a>
+							<a>小米平板</a>
+							<a>全球首款 NVIDIA Tegra K1 平板</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1meZjBCAT1RXrhCrK.jpg"></a>
+							<a>小米盒子增强版 1G</a>
+							<a>首款4K超高清网络机顶盒</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1tsEgB7DT1RXrhCrK.jpg"></a>
+							<a>全新小米路由器</a>
+							<a>顶配路由器，企业级性能</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T10TJjB5hT1RXrhCrK.jpg"></a>
+							<a>小米头戴式耳机</a>
+							<a>媲美主流千元级头戴耳机</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1hLhjB_AT1RXrhCrK.jpg"></a>
+							<a>小米插线板</a>
+							<a>3重安全保护，插线板中的艺术品</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1KDAjBCAT1RXrhCrK.jpg"></a>
+							<a>小米路由器mini</a>
+							<a>主流双频AC智能路由器</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T16eEjBKhT1RXrhCrK.jpg"></a>
+							<a>小米移动电源10000mAh</a>
+							<a>高密度进口电芯，仅名片大小</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1JnWjBCCT1RXrhCrK.jpg"></a>
+							<a>小米蓝牙耳机</a>
+							<a>2015德国IF大奖，高清通话音质</a>
+						</li>
+						<li>
+							<a><img src="http://i3.mifile.cn/a4/T1BsbjBvLT1RXrhCrK.jpg"></a>
+							<a>小米活塞耳机</a>
+							<a>2015红点奖，独家音质优化专利</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		<!--大功能区结束-->
+		</div>
+		<!--大展示区-->
+		<div id="main_show_box">
+			<!--1楼 智能硬件-->
+			<div class="floor" id="floor_1">
+				<!--头部名称-->
+				<div class="floor_head">
+					<span class="title_span">智能硬件</span>
+					<span id="floor_1_more">
+	    				<a>查看全部</a>
+	    				<a>></a>
+    			    </span>
+				</div>
+				<!--主体图片-->
+				<div class="floor_goods_wrap">
+					<ul>
+						<!--左边大图-->
+						<li class="floor_goods_wrap_li up_animate">
+							<a><img src="http://i3.mifile.cn/a4/T1IhLjBC_T1RXrhCrK.jpg"></a>
+						</li>
+						<!--右边小图+文字说明-->
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src=""></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_txt"></a>
+							<a class="floor_goods_price"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--2楼 搭配-->
+			<div class="floor" id="floor_2">
+				<!--头部名称-->
+				<div class="floor_head">
+					<span class="title_span">搭配</span>
+					<span class="floor_list" id="floor_1_list">
+    				  <ul>
+    					<li>热门</li>
+    					<li>耳机音箱</li>
+    					<li>电源</li>
+    					<li>电池存储卡</li>
+    				  </ul>
+    			   </span>
+				</div>
+				<!--主体图片-->
+				<div class="floor_goods_wrap" id="floor_2_content_1">
+					<ul>
+						<li class="floor_goods_wrap_li up_animate">
+							<a><img src="http://i3.mifile.cn/a4/T1c9EjBKZT1RXrhCrK.jpg"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt" style="text-decoration:line-through"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a><img src="http://i3.mifile.cn/a4/T1NsEjB4bT1RXrhCrK.jpg"></a>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li up_animate">
+							<a class="floor_goods_img"><img src="" width="150px" height="150px"></a>
+							<a class="floor_goods_tit"></a>
+							<a class="floor_goods_price"></a>
+							<a class="floor_goods_txt"></a>
+							<div class="floor_goods_mask">
+								<span>质量很好，值得购物质量很好，值得购物质量很好，值得购物</span>
+								<span>来自<h>帅哥小霍</h>的评价</span>
+							</div>
+						</li>
+						<li class="floor_goods_wrap_li floor_goods_small_top up_animate">
+							<span>
+		    					<a class="floor_goods_tit"></a>
+		    					<a class="floor_goods_price"></a>
+	    					</span>
+							<a class="floor_goods_img"><img src="" width="80px" height="80px"></a>
+						</li>
+						<li class="floor_goods_wrap_li floor_goods_small_bottom up_animate">
+							<span>
+		    					<a>浏览更多</a>
+		    					<a class="floor_goods_txt"></a>
+	    					</span>
+							<b>GO</b>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--3楼 热评推荐-->
+			<div class="floor" id="floor_3">
+				<!--头部-->
+				<div class="floor_head">
+					<span class="title_span">热评推荐</span>
+				</div>
+				<!--第一张图片-->
+				<div class="hot_recommend up_animate">
+					<a><img src="http://i3.mifile.cn/a4/T1aBVgB7YT1RXrhCrK.jpg"></a>
+					<div class="hot_recommend_txt">
+						<a>非常喜欢，萌萌哒，16g大容量！手机电脑两用非常实用</a>
+						<a>来自于
+							<h>帅哥小霍</h>的评价</a>
+						<span><a>米兔手机U盘</a><a>|</a><a>49.9元</a></span>
+					</div>
+				</div>
+				<!--第二张图片-->
+				<div class="hot_recommend up_animate">
+					<a><img src="http://i3.mifile.cn/a4/T1GiJjBCKT1RXrhCrK.jpg"></a>
+					<div class="hot_recommend_txt">
+						<a>非常喜欢，萌萌哒，16g大容量！手机电脑两用非常实用</a>
+						<a>来自于
+							<h>帅哥小霍</h>的评价</a>
+						<span><a>米兔手机U盘</a><a>|</a><a>49.9元</a></span>
+					</div>
+				</div>
+				<!--第三张图片-->
+				<div class="hot_recommend up_animate">
+					<a><img src="http://i3.mifile.cn/a4/T14DVjB4WT1RXrhCrK.jpg"></a>
+					<div class="hot_recommend_txt">
+						<a>非常喜欢，萌萌哒，16g大容量！手机电脑两用非常实用</a>
+						<a>来自于
+							<h>帅哥小霍</h>的评价</a>
+						<span><a>米兔手机U盘</a><a>|</a><a>49.9元</a></span>
+					</div>
+				</div>
+				<!--第四张图片-->
+				<div class="hot_recommend up_animate">
+					<a><img src="http://i3.mifile.cn/a4/T1UfJjB5bT1RXrhCrK.jpg"></a>
+					<div class="hot_recommend_txt">
+						<a>非常喜欢，萌萌哒，16g大容量！手机电脑两用非常实用</a>
+						<a>来自于
+							<h>帅哥小霍</h>的评价</a>
+						<span><a>米兔手机U盘</a><a>|</a><a>49.9元</a></span>
+					</div>
+				</div>
+			</div>
+			<!--4楼 视频-->
+			<div class="floor" id="floor_4">
+				<!--头部-->
+				<div class="floor_head">
+					<span class="title_span">视频</span>
+				</div>
+				<!--放4个视频框的大框-->
+				<div id="vido_box">
+					<!--第一个-->
+					<div class="vido_wrap up_animate">
+						<a class="vido_i">◆</a>
+						<span class="vido_pic"><img src="http://i3.mifile.cn/a4/T1ll_vB4hv1RXrhCrK.jpg"></span>
+						<a class="vido_tit">红米Note 2 青春首选</a>
+						<a class="vido_txt">2分钟告诉你为什么美好的事情即将发生</a>
+					</div>
+					<!--第二个-->
+					<div class="vido_wrap up_animate">
+						<a class="vido_i">◆</a>
+						<span class="vido_pic"><img src="http://i3.mifile.cn/a4/T1CibvBbLT1RXrhCrK.jpg"></span>
+						<a class="vido_tit">MIUI7 性能极速体验</a>
+						<a class="vido_txt">高速摄像机拍摄，告诉你什么叫快！</a>
+					</div>
+					<!--第三个-->
+					<div class="vido_wrap up_animate">
+						<a class="vido_i">◆</a>
+						<span class="vido_pic"><img src="http://i3.mifile.cn/a4/T1B1djB5xT1RXrhCrK.jpg"></span>
+						<a class="vido_tit">60秒看懂小米Note有多酷</a>
+						<a class="vido_txt">美女超模出演小米Note旗舰新品超炫广告</a>
+					</div>
+					<!--第四个-->
+					<div class="vido_wrap up_animate">
+						<a class="vido_i">◆</a>
+						<span class="vido_pic"><img src="http://i3.mifile.cn/a4/T1tc_gBjZT1RXrhCrK.jpg"></span>
+						<a class="vido_tit">安卓机皇 小米Note顶配版</a>
+						<a class="vido_txt">顶级工艺，性能王者，艺术与科技的高度融合</a>
+					</div>
+				</div>
+			</div>
+		<!--大展示区结束-->
+		</div>
+		<!--视频弹框-->
+		<div id="vido_div">
+			<!--视频标题-->
+			<div class="vido_div_tit">
+				红米Note 2 青春首选
+				<a class="close_vido_div" id="close_vido_div">×</a>
+			</div>
+			<!--视频区-->
+			<div id="vido_src"></div>
+		</div>
+		<!--页面结尾-->
+		<div id="foot_box">
+			<!--尾部上半栏-->
+			<div id="foot_wrap">
+				<!--上半栏头部-->
+				<div class="foot_top">
+					<ul>
+						<li>1小时快修服务</li>
+						<li class="font_top_i">|</li>
+						<li>7天无理由退货</li>
+						<li class="font_top_i">|</li>
+						<li>15天免费换货</li>
+						<li class="font_top_i">|</li>
+						<li>满150元包邮</li>
+						<li class="font_top_i">|</li>
+						<li>520余家售后网点</li>
+					</ul>
+				</div>
+				<!--上半栏下半部分-->
+				<div class="foot_bottom">
+					<!--左侧-->
+					<div class="foot_bottom_l">
+						<dl>
+							<dt>帮助中心</dt>
+							<dd>购物指南</dd>
+							<dd>支付方式</dd>
+							<dd>配送方式</dd>
+						</dl>
+						<dl>
+							<dt>服务支持</dt>
+							<dd>售后政策</dd>
+							<dd>自助服务</dd>
+							<dd>相关下载</dd>
+						</dl>
+						<dl>
+							<dt>小米之家</dt>
+							<dd>小米之家</dd>
+							<dd>服务网点</dd>
+							<dd>预约亲临到店服务</dd>
+						</dl>
+						<dl>
+							<dt>关注我们</dt>
+							<dd>新浪微博</dd>
+							<dd>小米部落</dd>
+							<dd>官方微信</dd>
+						</dl>
+					</div>
+					<!--右侧-->
+					<div class="foot_bottom_r">
+						<a>400-100-5678</a>
+						<a>周一至周日 8:00-18:00</a>
+						<a>（仅收市话费）</a>
+						<span> 24小时在线客服</span>
+					</div>
+				</div>
+			</div>
+			<!--尾部下半栏-->
+			<div class="foot_note_box">
+				<div class="foot_note_wrap">
+					<div class="foot_note_con">
+						<span class="foot_logo"><img src="http://s01.mifile.cn/i/mi-logo.png" width="38px" height="38px"></span>
+						<span class="foot_note_txt">
+							<a>小米网</a>
+							<h>|</h>
+							<a>MIUI</a>
+							<h>|</h>
+							<a>米聊</a>
+							<h>|</h>
+							<a>多看书城</a>
+							<h>|</h>
+							<a>小米路由器</a>
+							<h>|</h>
+							<a>小米后院</a>
+							<h>|</h>
+							<a>小米天猫店</a>
+							<h>|</h>
+							<a>小米淘宝直营店</a>
+							<h>|</h>
+							<a>小米网盟</a>
+							<h>|</h>
+							<a>问题反馈</a>
+							<h>|</h>
+							<a>Select Region</a>
+						    <a>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号</a>
+						</span>
+					</div>
+					<!--回到顶部-->
+					<a class="back_top" href="#top">TOP↑</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
